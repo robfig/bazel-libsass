@@ -1,0 +1,5 @@
+# gazelle:prefix github.com/robfig/bazel-libsass
+
+load("@bazel_gazelle//:def.bzl", "gazelle")
+
+gazelle(name = "gazelle")
