@@ -24,9 +24,21 @@ load("@bazel_gazelle//:deps.bzl", "gazelle_dependencies", "go_repository")
 gazelle_dependencies()
 
 go_repository(
-    name = "com_github_wellington_go_libsass",
-    build_file_name = "BUILD.bazel",
+    name = "org_golang_x_net",
+    commit = "ab5485076ff3407ad2d02db054635913f017b0ed",
+    importpath = "golang.org/x/net",
     build_file_proto_mode = "disable",
-    commit = "615eaa47ef794d037c1906a0eb7bf85375a5decf",
-    importpath = "github.com/wellington/go-libsass",
+    build_file_name = "BUILD.bazel",
+)
+
+# NOTE: for local testing
+# local_repository(
+#     name = "com_github_yext_go_libsass",
+#     path = "/Users/robfig/gocode/src/github.com/yext/go-libsass",
+# )
+
+git_repository(
+    name = "com_github_yext_go_libsass",
+    commit = "7a4e5819d48d43820bc9e24e3ca7dfece360affa",
+    remote = "https://github.com/yext/go-libsass",
 )

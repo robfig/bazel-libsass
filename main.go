@@ -1,7 +1,11 @@
 package main
 
-import ls "github.com/wellington/go-libsass"
+import (
+	"fmt"
+
+	ls "github.com/yext/go-libsass"
+)
 
 func main() {
-	println(ls.NewSassValue())
+	fmt.Println(ls.NewSassValue())
 }
