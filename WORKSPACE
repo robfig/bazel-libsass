@@ -39,6 +39,6 @@ go_repository(
 
 git_repository(
     name = "com_github_yext_go_libsass",
-    commit = "7a4e5819d48d43820bc9e24e3ca7dfece360affa",
+    commit = "fe96003de49d2e43f24625a0c59c400d7179c4a5",
     remote = "https://github.com/yext/go-libsass",
 )
